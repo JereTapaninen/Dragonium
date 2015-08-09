@@ -1,0 +1,17 @@
+c:\VS\Dragonium\Dragonium\Dragonium\bin\Debug\Dragonium.exe.config
+c:\VS\Dragonium\Dragonium\Dragonium\bin\Debug\Dragonium.exe
+c:\VS\Dragonium\Dragonium\Dragonium\bin\Debug\Dragonium.pdb
+c:\VS\Dragonium\Dragonium\Dragonium\obj\Debug\Dragonium.frmMain.resources
+c:\VS\Dragonium\Dragonium\Dragonium\obj\Debug\Dragonium.Properties.Resources.resources
+c:\VS\Dragonium\Dragonium\Dragonium\obj\Debug\Dragonium.csproj.GenerateResource.Cache
+c:\VS\Dragonium\Dragonium\Dragonium\obj\Debug\Dragonium.exe
+c:\VS\Dragonium\Dragonium\Dragonium\obj\Debug\Dragonium.pdb
+c:\VS\Dragonium\Dragonium\Dragonium\bin\Debug\MetroFramework.Design.dll
+c:\VS\Dragonium\Dragonium\Dragonium\bin\Debug\MetroFramework.dll
+c:\VS\Dragonium\Dragonium\Dragonium\bin\Debug\MetroFramework.Fonts.dll
+c:\VS\Dragonium\Dragonium\Dragonium\obj\Debug\Dragonium.frmLoader.resources
+c:\VS\Dragonium\Dragonium\Dragonium\bin\Debug\Newtonsoft.Json.dll
+c:\VS\Dragonium\Dragonium\Dragonium\bin\Debug\Newtonsoft.Json.xml
+c:\VS\Dragonium\Dragonium\Dragonium\obj\Debug\Dragonium.frmAbout.resources
+c:\VS\Dragonium\Dragonium\Dragonium\obj\Debug\Dragonium.frmSelectVersion.resources
+c:\VS\Dragonium\Dragonium\Dragonium\obj\Debug\Dragonium.csprojResolveAssemblyReference.cache
