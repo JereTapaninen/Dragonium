@@ -60,12 +60,8 @@ namespace Dragonium
             {
                 foreach (Control control in this.Controls)
                 {
-                    if (control is MenuStrip)
-                        (control as MenuStrip).RenderMode = ToolStripRenderMode.System;
-                    else if (control is ToolStrip)
+                    if (control is MenuStrip || control is ToolStrip || control is StatusStrip)
                         (control as ToolStrip).RenderMode = ToolStripRenderMode.System;
-                    else if (control is StatusStrip)
-                        (control as StatusStrip).RenderMode = ToolStripRenderMode.System;
                 }
             }
         }
