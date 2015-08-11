@@ -21,7 +21,7 @@ namespace Dragonium.IO.Theme.Controls
 
     public class DragoniumMetroListBox : ListBox
     {
-        public BorderStyle BorderStyle
+        public new BorderStyle BorderStyle
         {
             get
             {
@@ -41,6 +41,8 @@ namespace Dragonium.IO.Theme.Controls
             : base()
         {
             this.BorderPen = new Pen(this.GetPushedColor(base.BackColor), 1F);
+
+            base.BorderStyle = this.BorderStyle;
         }
         
         /// <summary>
