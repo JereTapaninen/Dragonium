@@ -39,6 +39,12 @@
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolsMain = new System.Windows.Forms.ToolStrip();
             this.lbConsole = new Dragonium.IO.Theme.Controls.DragoniumMetroListBox();
+            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.loadAScriptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.scriptOptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.disableAScriptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMain.SuspendLayout();
             this.statusMain.SuspendLayout();
             this.SuspendLayout();
@@ -72,6 +78,11 @@
             // 
             // scriptsToolStripMenuItem
             // 
+            this.scriptsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.loadAScriptToolStripMenuItem,
+            this.disableAScriptToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.scriptOptionsToolStripMenuItem});
             this.scriptsToolStripMenuItem.Name = "scriptsToolStripMenuItem";
             this.scriptsToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.scriptsToolStripMenuItem.Text = "Scripts";
@@ -79,6 +90,8 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.helpToolStripMenuItem1,
+            this.toolStripSeparator1,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
@@ -87,7 +100,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -119,12 +132,49 @@
             // 
             // lbConsole
             // 
+            this.lbConsole.BackColor = System.Drawing.SystemColors.Window;
+            this.lbConsole.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbConsole.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lbConsole.FormattingEnabled = true;
             this.lbConsole.Location = new System.Drawing.Point(0, 615);
             this.lbConsole.Name = "lbConsole";
+            this.lbConsole.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbConsole.Size = new System.Drawing.Size(1158, 78);
             this.lbConsole.TabIndex = 2;
+            // 
+            // helpToolStripMenuItem1
+            // 
+            this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
+            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.helpToolStripMenuItem1.Text = "Help";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            // 
+            // loadAScriptToolStripMenuItem
+            // 
+            this.loadAScriptToolStripMenuItem.Name = "loadAScriptToolStripMenuItem";
+            this.loadAScriptToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.loadAScriptToolStripMenuItem.Text = "Load a script";
+            // 
+            // scriptOptionsToolStripMenuItem
+            // 
+            this.scriptOptionsToolStripMenuItem.Name = "scriptOptionsToolStripMenuItem";
+            this.scriptOptionsToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.scriptOptionsToolStripMenuItem.Text = "Script Options";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(150, 6);
+            // 
+            // disableAScriptToolStripMenuItem
+            // 
+            this.disableAScriptToolStripMenuItem.Name = "disableAScriptToolStripMenuItem";
+            this.disableAScriptToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.disableAScriptToolStripMenuItem.Text = "Disable a script";
             // 
             // frmMain
             // 
@@ -164,6 +214,12 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private IO.Theme.Controls.DragoniumMetroListBox lbConsole;
         private System.Windows.Forms.ToolStrip toolsMain;
+        private System.Windows.Forms.ToolStripMenuItem loadAScriptToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem disableAScriptToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem scriptOptionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }
 

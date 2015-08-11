@@ -21,37 +21,6 @@ namespace Dragonium.IO.Theme.Controls
 
     public class DragoniumMetroListBox : ListBox
     {
-        public new BorderStyle BorderStyle
-        {
-            get
-            {
-                return System.Windows.Forms.BorderStyle.None;
-            }
-        }
-        
-        public new RightToLeft RightToLeft
-        {
-            get
-            {
-                return RightToLeft.No;
-            }
-        }
-
-        public new bool AllowDrop
-        {
-            get { return false;  }
-        }
-
-        public new bool MultiColumn
-        {
-            get { return false; }
-        }
-
-        public new Color BackColor
-        {
-            get { return SystemColors.Window; }
-        }
-
         /// <summary>
         /// The custom pen used on the borders
         /// </summary>
