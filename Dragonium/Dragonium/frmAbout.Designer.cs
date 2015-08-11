@@ -69,6 +69,8 @@
             // lnkIcons8
             // 
             this.lnkIcons8.AutoSize = true;
+            this.lnkIcons8.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lnkIcons8.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(255)))));
             this.lnkIcons8.Location = new System.Drawing.Point(12, 133);
             this.lnkIcons8.Name = "lnkIcons8";
             this.lnkIcons8.Size = new System.Drawing.Size(132, 13);
@@ -80,6 +82,8 @@
             // lnkGithub
             // 
             this.lnkGithub.AutoSize = true;
+            this.lnkGithub.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lnkGithub.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(255)))));
             this.lnkGithub.Location = new System.Drawing.Point(12, 187);
             this.lnkGithub.Name = "lnkGithub";
             this.lnkGithub.Size = new System.Drawing.Size(243, 13);
