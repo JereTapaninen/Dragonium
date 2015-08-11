@@ -38,13 +38,13 @@
             this.statusMain = new System.Windows.Forms.StatusStrip();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolsMain = new System.Windows.Forms.ToolStrip();
-            this.lbConsole = new Dragonium.IO.Theme.Controls.DragoniumMetroListBox();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.loadAScriptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scriptOptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.disableAScriptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbConsole = new Dragonium.IO.Theme.Controls.DragoniumMetroListBox();
             this.menuMain.SuspendLayout();
             this.statusMain.SuspendLayout();
             this.SuspendLayout();
@@ -73,8 +73,9 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // scriptsToolStripMenuItem
             // 
@@ -100,7 +101,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -130,28 +131,16 @@
             this.toolsMain.Size = new System.Drawing.Size(1158, 25);
             this.toolsMain.TabIndex = 3;
             // 
-            // lbConsole
-            // 
-            this.lbConsole.BackColor = System.Drawing.SystemColors.Window;
-            this.lbConsole.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lbConsole.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lbConsole.FormattingEnabled = true;
-            this.lbConsole.Location = new System.Drawing.Point(0, 615);
-            this.lbConsole.Name = "lbConsole";
-            this.lbConsole.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbConsole.Size = new System.Drawing.Size(1158, 78);
-            this.lbConsole.TabIndex = 2;
-            // 
             // helpToolStripMenuItem1
             // 
             this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
-            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
             this.helpToolStripMenuItem1.Text = "Help";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(104, 6);
             // 
             // loadAScriptToolStripMenuItem
             // 
@@ -175,6 +164,18 @@
             this.disableAScriptToolStripMenuItem.Name = "disableAScriptToolStripMenuItem";
             this.disableAScriptToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.disableAScriptToolStripMenuItem.Text = "Disable a script";
+            // 
+            // lbConsole
+            // 
+            this.lbConsole.BackColor = System.Drawing.SystemColors.Window;
+            this.lbConsole.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbConsole.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lbConsole.FormattingEnabled = true;
+            this.lbConsole.Location = new System.Drawing.Point(0, 615);
+            this.lbConsole.Name = "lbConsole";
+            this.lbConsole.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbConsole.Size = new System.Drawing.Size(1158, 78);
+            this.lbConsole.TabIndex = 2;
             // 
             // frmMain
             // 

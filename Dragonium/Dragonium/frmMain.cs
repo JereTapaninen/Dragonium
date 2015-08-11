@@ -32,6 +32,19 @@ namespace Dragonium
         }
 
         /// <summary>
+        /// Does what it says.
+        /// </summary>
+        public void ExitDragonium()
+        {
+            //@TODO Stop threads, procedures, async tasks etc. later on
+
+            // Finally, close the form. 
+            // After that, close the Application.
+            this.Close();
+            Application.Exit();
+        }
+
+        /// <summary>
         /// Event that fires after the Dragonium form has loaded
         /// </summary>
         /// <param name="sender">The form</param>
@@ -83,6 +96,11 @@ namespace Dragonium
         {
             if (!AboutForm.Visible)
                 AboutForm.Show();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.ExitDragonium();
         }
     }
 }
