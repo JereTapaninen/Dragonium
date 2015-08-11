@@ -99,6 +99,30 @@ namespace Dragonium.IO.Theme
             }
         }
 
+        public override Color ImageMarginGradientBegin
+        {
+            get
+            {
+                return this.MetroWindowDefaultColor;
+            }
+        }
+
+        public override Color ImageMarginGradientMiddle
+        {
+            get
+            {
+                return this.MetroWindowDefaultColor;
+            }
+        }
+
+        public override Color ImageMarginGradientEnd
+        {
+            get
+            {
+                return this.MetroWindowDefaultColor;
+            }
+        }
+
         /* Status Strip Begin */
 
         public override Color StatusStripGradientBegin
@@ -110,6 +134,32 @@ namespace Dragonium.IO.Theme
         }
 
         public override Color StatusStripGradientEnd
+        {
+            get
+            {
+                return this.MetroWindowDefaultColor;
+            }
+        }
+
+        /* Tool Strip Begin */
+
+        public override Color ToolStripGradientBegin
+        {
+            get
+            {
+                return this.MetroWindowDefaultColor;
+            }
+        }
+
+        public override Color ToolStripGradientMiddle
+        {
+            get
+            {
+                return this.MetroWindowDefaultColor;
+            }
+        }
+
+        public override Color ToolStripGradientEnd
         {
             get
             {
@@ -131,6 +181,24 @@ namespace Dragonium.IO.Theme
             var newRed = (red < 128) ? red + 25 : red - 25;
             var newGreen = (green < 128) ? green + 25 : green - 25;
             var newBlue = (blue < 128) ? blue + 25 : blue - 25;
+
+            return Color.FromArgb(newRed, newGreen, newBlue);
+        }
+
+        /// <summary>
+        /// "Lightens" up the given color
+        /// </summary>
+        /// <param name="color">The color to "lighten" up</param>
+        /// <returns>The "lightened-up" color</returns>
+        private Color LightColor(Color color)
+        {
+            var red = color.R;
+            var green = color.G;
+            var blue = color.B;
+
+            var newRed = (red < 128) ? red - 10 : red + 10;
+            var newGreen = (green < 128) ? green - 10 : green + 10;
+            var newBlue = (blue < 128) ? blue - 10 : blue + 10;
 
             return Color.FromArgb(newRed, newGreen, newBlue);
         }

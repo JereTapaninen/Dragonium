@@ -18,6 +18,8 @@ namespace Dragonium.IO.Theme
         /// </summary>
         public DragoniumStripRenderer()
             : base(new DragoniumStripColors())
-        { }
+        {
+            this.RoundedEdges = false;
+        }
     }
 }

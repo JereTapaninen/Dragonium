@@ -81,6 +81,9 @@
     <Compile Include="frmSelectVersion.Designer.cs">
       <DependentUpon>frmSelectVersion.cs</DependentUpon>
     </Compile>
+    <Compile Include="IO\Theme\Controls\DragoniumMetroListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="IO\Theme\DragoniumStripColors.cs" />
     <Compile Include="IO\Theme\DragoniumStripRenderer.cs" />
     <Compile Include="Program.cs" />

@@ -39,6 +39,10 @@ namespace Dragonium
         private void frmMain_Load(object sender, EventArgs e)
         { }
 
+        /// <summary>
+        /// Initializes stuff.
+        /// </summary>
+        /// <param name="version"></param>
         private void Initialize(ProgramVersion version)
         {
             this.AboutForm = new frmAbout();
@@ -54,7 +58,10 @@ namespace Dragonium
         {
             if (version == ProgramVersion.Metro)
             {
-                this.menuMain.Renderer = new DragoniumStripRenderer();
+                var stripRenderer = new DragoniumStripRenderer();
+
+                this.menuMain.Renderer = stripRenderer;
+                this.statusMain.Renderer = stripRenderer;
             }
             else if (version == ProgramVersion.OldFashioned)
             {
