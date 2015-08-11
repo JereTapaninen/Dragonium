@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Dragonium
 {
@@ -33,6 +34,16 @@ namespace Dragonium
             e.Cancel = true;
 
             this.Hide();
+        }
+
+        private void lnkIcons8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://icons8.com/");
+        }
+
+        private void lnkGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/JereTapaninen/Dragonium");
         }
     }
 }
