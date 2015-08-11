@@ -38,9 +38,7 @@ namespace Dragonium
         {
             //@TODO Stop threads, procedures, async tasks etc. later on
 
-            // Finally, close the form. 
-            // After that, close the Application.
-            this.Close();
+            // Finally, close the Application.
             Application.Exit();
         }
 
@@ -99,6 +97,11 @@ namespace Dragonium
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.ExitDragonium();
+        }
+
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.ExitDragonium();
         }
