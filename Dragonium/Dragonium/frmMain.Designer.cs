@@ -121,9 +121,9 @@
             // 
             this.lbConsole.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lbConsole.FormattingEnabled = true;
-            this.lbConsole.Location = new System.Drawing.Point(0, 602);
+            this.lbConsole.Location = new System.Drawing.Point(0, 615);
             this.lbConsole.Name = "lbConsole";
-            this.lbConsole.Size = new System.Drawing.Size(1158, 91);
+            this.lbConsole.Size = new System.Drawing.Size(1158, 78);
             this.lbConsole.TabIndex = 2;
             // 
             // frmMain

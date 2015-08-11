@@ -28,6 +28,29 @@ namespace Dragonium.IO.Theme.Controls
                 return System.Windows.Forms.BorderStyle.None;
             }
         }
+        
+        public new RightToLeft RightToLeft
+        {
+            get
+            {
+                return RightToLeft.No;
+            }
+        }
+
+        public new bool AllowDrop
+        {
+            get { return false;  }
+        }
+
+        public new bool MultiColumn
+        {
+            get { return false; }
+        }
+
+        public new Color BackColor
+        {
+            get { return SystemColors.Window; }
+        }
 
         /// <summary>
         /// The custom pen used on the borders
@@ -43,6 +66,10 @@ namespace Dragonium.IO.Theme.Controls
             this.BorderPen = new Pen(this.GetPushedColor(base.BackColor), 1F);
 
             base.BorderStyle = this.BorderStyle;
+            base.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            base.AllowDrop = false;
+            base.BackColor = SystemColors.Window;
+            base.MultiColumn = false;
         }
         
         /// <summary>
