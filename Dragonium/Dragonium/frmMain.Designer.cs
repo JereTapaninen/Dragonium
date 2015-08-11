@@ -37,8 +37,8 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusMain = new System.Windows.Forms.StatusStrip();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.dragoniumMetroListBox1 = new Dragonium.IO.Theme.Controls.DragoniumMetroListBox();
             this.toolsMain = new System.Windows.Forms.ToolStrip();
+            this.lbConsole = new Dragonium.IO.Theme.Controls.DragoniumMetroListBox();
             this.menuMain.SuspendLayout();
             this.statusMain.SuspendLayout();
             this.SuspendLayout();
@@ -108,16 +108,6 @@
             this.lblStatus.Size = new System.Drawing.Size(110, 17);
             this.lblStatus.Text = "Dragonium is ready";
             // 
-            // dragoniumMetroListBox1
-            // 
-            this.dragoniumMetroListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dragoniumMetroListBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dragoniumMetroListBox1.FormattingEnabled = true;
-            this.dragoniumMetroListBox1.Location = new System.Drawing.Point(0, 602);
-            this.dragoniumMetroListBox1.Name = "dragoniumMetroListBox1";
-            this.dragoniumMetroListBox1.Size = new System.Drawing.Size(1158, 91);
-            this.dragoniumMetroListBox1.TabIndex = 2;
-            // 
             // toolsMain
             // 
             this.toolsMain.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
@@ -127,13 +117,22 @@
             this.toolsMain.Size = new System.Drawing.Size(1158, 25);
             this.toolsMain.TabIndex = 3;
             // 
+            // lbConsole
+            // 
+            this.lbConsole.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lbConsole.FormattingEnabled = true;
+            this.lbConsole.Location = new System.Drawing.Point(0, 602);
+            this.lbConsole.Name = "lbConsole";
+            this.lbConsole.Size = new System.Drawing.Size(1158, 91);
+            this.lbConsole.TabIndex = 2;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1158, 715);
             this.Controls.Add(this.toolsMain);
-            this.Controls.Add(this.dragoniumMetroListBox1);
+            this.Controls.Add(this.lbConsole);
             this.Controls.Add(this.statusMain);
             this.Controls.Add(this.menuMain);
             this.DoubleBuffered = true;
@@ -163,7 +162,7 @@
         private System.Windows.Forms.ToolStripStatusLabel lblStatus;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private IO.Theme.Controls.DragoniumMetroListBox dragoniumMetroListBox1;
+        private IO.Theme.Controls.DragoniumMetroListBox lbConsole;
         private System.Windows.Forms.ToolStrip toolsMain;
     }
 }

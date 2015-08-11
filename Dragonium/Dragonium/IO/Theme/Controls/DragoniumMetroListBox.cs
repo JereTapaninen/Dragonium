@@ -21,6 +21,14 @@ namespace Dragonium.IO.Theme.Controls
 
     public class DragoniumMetroListBox : ListBox
     {
+        public BorderStyle BorderStyle
+        {
+            get
+            {
+                return System.Windows.Forms.BorderStyle.None;
+            }
+        }
+
         /// <summary>
         /// The custom pen used on the borders
         /// </summary>
@@ -32,8 +40,6 @@ namespace Dragonium.IO.Theme.Controls
         public DragoniumMetroListBox()
             : base()
         {
-            this.BorderStyle = System.Windows.Forms.BorderStyle.None;
-
             this.BorderPen = new Pen(this.GetPushedColor(base.BackColor), 1F);
         }
         
