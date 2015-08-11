@@ -38,6 +38,7 @@
             this.statusMain = new System.Windows.Forms.StatusStrip();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.dragoniumMetroListBox1 = new Dragonium.IO.Theme.Controls.DragoniumMetroListBox();
+            this.toolsMain = new System.Windows.Forms.ToolStrip();
             this.menuMain.SuspendLayout();
             this.statusMain.SuspendLayout();
             this.SuspendLayout();
@@ -117,11 +118,21 @@
             this.dragoniumMetroListBox1.Size = new System.Drawing.Size(1158, 91);
             this.dragoniumMetroListBox1.TabIndex = 2;
             // 
+            // toolsMain
+            // 
+            this.toolsMain.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolsMain.Location = new System.Drawing.Point(0, 24);
+            this.toolsMain.Name = "toolsMain";
+            this.toolsMain.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.toolsMain.Size = new System.Drawing.Size(1158, 25);
+            this.toolsMain.TabIndex = 3;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1158, 715);
+            this.Controls.Add(this.toolsMain);
             this.Controls.Add(this.dragoniumMetroListBox1);
             this.Controls.Add(this.statusMain);
             this.Controls.Add(this.menuMain);
@@ -153,6 +164,7 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private IO.Theme.Controls.DragoniumMetroListBox dragoniumMetroListBox1;
+        private System.Windows.Forms.ToolStrip toolsMain;
     }
 }
 

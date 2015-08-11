@@ -62,6 +62,7 @@ namespace Dragonium
 
                 this.menuMain.Renderer = stripRenderer;
                 this.statusMain.Renderer = stripRenderer;
+                this.toolsMain.Renderer = stripRenderer;
             }
             else if (version == ProgramVersion.OldFashioned)
             {
