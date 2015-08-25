@@ -20,7 +20,7 @@ namespace Dragonium
             var loader = new frmLoader();
             loader.Show();
 
-            Application.Run();
+            //Application.Run();
         }
     }
 }
